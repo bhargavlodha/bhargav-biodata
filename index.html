@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Bhargav Lodha - Biodata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#475569',
+                        accent: '#3b82f6',
+                        darkBg: '#0b1120',
+                        darkCard: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-darkBg text-slate-800 dark:text-slate-200 antialiased selection:bg-accent selection:text-white relative min-h-screen">
+
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-200 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 animate-blob transition-colors duration-500"></div>
+        <div class="absolute top-[20%] right-[-10%] w-96 h-96 bg-indigo-200 dark:bg-indigo-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 animate-blob animation-delay-2000 transition-colors duration-500"></div>
+    </div>
+
+    <div class="fixed top-4 right-4 z-40">
+        <button id="theme-toggle" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-700 dark:text-yellow-400 hover:scale-110 transition-transform focus:outline-none">
+            <i id="theme-icon" class="fas fa-moon text-lg"></i>
+        </button>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pt-16">
+        
+        <header class="glass-card rounded-2xl p-5 md:p-6 mb-5 md:mb-6 fade-in-section flex flex-col md:flex-row items-center gap-5 md:gap-6 relative overflow-hidden justify-center">
+            <div class="absolute top-0 left-0 w-1 h-full bg-accent"></div>
+            
+            <div class="w-40 h-40 md:w-56 md:h-56 shrink-0 rounded-2xl overflow-hidden border-4 border-white dark:border-slate-700 shadow-xl relative group cursor-pointer" onclick="openLightbox(this.querySelector('img').src)">
+                <img src="assets/profile-pic.jpeg" alt="Bhargav Lodha" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://ui-avatars.com/api/?name=Bhargav+Lodha&size=400&background=0D8ABC&color=fff'">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <i class="fas fa-search-plus text-white text-2xl"></i>
+                </div>
+            </div>
+            
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">Bhargav Lodha</h1>
+                <p class="text-lg md:text-2xl text-accent font-semibold mb-5">IoT Engineer & Web Developer</p>
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start text-sm md:text-base">
+                    <span class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-medium">
+                        <i class="fas fa-map-marker-alt text-accent"></i> Ahmedabad, Gujarat
+                    </span>
+                    <span class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-medium">
+                        <i class="fas fa-ruler-vertical text-accent"></i> 5' 9"
+                    </span>
+                    <span class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-medium">
+                        <i class="fas fa-om text-accent"></i> Hindu, Lodha
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 mb-5 md:mb-6">
+            
+            <div class="lg:col-span-8 space-y-5 md:space-y-6">
+                <section class="glass-card rounded-2xl p-5 md:p-6 fade-in-section flex flex-col justify-center">
+                    <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-4 md:mb-5 flex items-center gap-3">
+                        <span class="bg-accent/10 dark:bg-accent/20 p-2 rounded-lg"><i class="fas fa-user text-accent"></i></span>
+                        Personal Details
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 md:gap-y-5 gap-x-3">
+                        <div class="detail-item">
+                            <span class="detail-label">Full Name</span>
+                            <span class="detail-value">Bhargav Lodha</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Date of Birth</span>
+                            <span class="detail-value">04/04/2002</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Time of Birth</span>
+                            <span class="detail-value">12:00 PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Place of Birth</span>
+                            <span class="detail-value">Ahmedabad, Gujarat</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Rashi</span>
+                            <span class="detail-value">Dhanu (Sagittarius)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Hobbies</span>
+                            <span class="detail-value">Traveling</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card rounded-2xl p-5 md:p-6 fade-in-section flex flex-col justify-center">
+                    <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-4 md:mb-5 flex items-center gap-3">
+                        <span class="bg-accent/10 dark:bg-accent/20 p-2 rounded-lg"><i class="fas fa-graduation-cap text-accent"></i></span>
+                        Education & Profession
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
+                            <div class="text-accent mb-2"><i class="fas fa-book-reader text-2xl"></i></div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">Computer Engineer</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Highest Qualification</p>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
+                            <div class="text-accent mb-2"><i class="fas fa-laptop-code text-2xl"></i></div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">IoT Engineer & Web Dev</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Working in Ahmedabad</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="lg:col-span-4 space-y-5 md:space-y-6">
+                <section class="glass-card rounded-2xl p-5 md:p-6 fade-in-section h-full flex flex-col justify-center">
+                    <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-4 md:mb-5 flex items-center gap-3">
+                        <span class="bg-accent/10 dark:bg-accent/20 p-2 rounded-lg"><i class="fas fa-users text-accent"></i></span>
+                        Family Details
+                    </h2>
+                    
+                    <div class="space-y-4 md:space-y-5">
+                        <div class="space-y-3 pb-4 border-b border-slate-200 dark:border-slate-700/50">
+                            <div class="detail-item">
+                                <span class="detail-label">Father</span>
+                                <span class="detail-value">Kamlesh Bhai Lodha</span>
+                                <span class="text-xs text-accent font-medium mt-0.5">Occupation: Business</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mother</span>
+                                <span class="detail-value">Champa Ben Lodha</span>
+                                <span class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Occupation: Housewife</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="detail-item">
+                                <span class="detail-label">Brother (Bhai)</span>
+                                <span class="detail-value">Tejas Lodha</span>
+                                <span class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Bhabhi: Rutusha Lodha</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Sister</span>
+                                <span class="detail-value">Nisha Lodha</span>
+                                <span class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Jiju: Avdhesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="glass-card rounded-2xl p-5 md:p-6 mb-5 md:mb-6 fade-in-section w-full">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-5 gap-4">
+                <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-3 shrink-0">
+                    <span class="bg-accent/10 dark:bg-accent/20 p-2 rounded-lg"><i class="fas fa-images text-accent"></i></span>
+                    Photo Gallery
+                </h2>
+                
+                <div class="flex gap-2 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 hide-scroll" id="gallery-tabs">
+                    <button class="gallery-tab active" data-filter="all">All</button>
+                    <button class="gallery-tab" data-filter="traditional">Traditional</button>
+                    <button class="gallery-tab" data-filter="trekking">Trekking</button>
+                    <button class="gallery-tab" data-filter="casual">Casual</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3" id="gallery-grid">
+                
+                <div class="gallery-item traditional aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/traditional-1.jpeg" alt="Traditional" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item trekking aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/trekking-1.jpeg" alt="Trekking" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item casual aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/casual-1.jpeg" alt="Casual" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item trekking aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/trekking-2.jpeg" alt="Trekking 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item casual aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/casual-2.jpeg" alt="Casual 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item casual aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/casual-3.jpeg" alt="Casual 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item casual aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/casual-4.jpeg" alt="Casual 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item trekking aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/trekking-3.jpeg" alt="Trekking 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+                <div class="gallery-item trekking aspect-[3/4] rounded-lg overflow-hidden relative group cursor-pointer shadow-sm" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/trekking-4.jpeg" alt="Trekking 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-white text-xl"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card rounded-2xl p-5 md:p-6 mb-5 md:mb-6 fade-in-section flex flex-col justify-center">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-4 md:mb-5 flex items-center gap-3">
+                <span class="bg-accent/10 dark:bg-accent/20 p-2 rounded-lg"><i class="fas fa-address-book text-accent"></i></span>
+                Contact Information
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-6 items-center">
+                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+                    <div class="detail-item">
+                        <span class="detail-label">Contact Person</span>
+                        <span class="detail-value text-lg">Bhargav Lodha</span>
+                        <a href="tel:7043939296" class="text-accent font-bold mt-1 text-lg hover:underline"><i class="fas fa-phone-alt text-sm mr-1"></i> 7043939296</a>
+                    </div>
+                    <div class="detail-item sm:border-l sm:border-slate-200 dark:sm:border-slate-700 sm:pl-5">
+                        <span class="detail-label">Residential Address</span>
+                        <span class="detail-value text-sm leading-relaxed mt-1">
+                            A-8 Shyam Apartment 2,<br>
+                            Near Circuit House, Airport Rd,<br>
+                            Shahibag, Ahmedabad,<br>
+                            Gujarat 380004
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-row lg:flex-col gap-3 justify-center border-t border-slate-200 dark:border-slate-700 pt-4 md:pt-5 lg:pt-0 lg:border-t-0 lg:border-l lg:pl-5">
+                    <a href="tel:+917043939296" class="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-4 py-3 rounded-xl hover:opacity-90 transition shadow-md font-medium text-sm md:text-base">
+                        <i class="fas fa-phone-alt"></i> Call
+                    </a>
+                    <a href="https://wa.me/917043939296" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-3 rounded-xl hover:bg-green-700 transition shadow-md font-medium text-sm md:text-base">
+                        <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-500 dark:text-slate-400 text-xs mt-6 mb-4">
+            <p>Kindly treat the information in this biodata as confidential.</p>
+        </footer>
+
+    </main>
+
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 flex flex-col hidden opacity-0 transition-opacity duration-300">
+        <div class="flex justify-between items-center p-4 text-white z-50 bg-gradient-to-b from-black/80 to-transparent">
+            <div class="flex gap-4">
+                <button onclick="zoomOut()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition focus:outline-none">
+                    <i class="fas fa-search-minus"></i>
+                </button>
+                <button onclick="resetZoom()" class="px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 text-sm font-medium transition focus:outline-none">
+                    Reset
+                </button>
+                <button onclick="zoomIn()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition focus:outline-none">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            <button onclick="closeLightbox()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-red-500/80 flex items-center justify-center transition focus:outline-none">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-hidden flex items-center justify-center p-4 relative" id="lightbox-container">
+            <img id="lightbox-image" src="" alt="Full Screen Photo" class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl pointer-events-none select-none">
+        </div>
+        
+        <div class="text-white/50 text-xs text-center pb-6 absolute bottom-0 w-full pointer-events-none">
+            Use buttons to zoom. Drag to pan when zoomed.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
